@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduHub by Danish</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>EduHub</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#learning">Learning</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Welcome to EduHub</h2>
+    <p>EduHub is a space where I share my hands-on tech projects and learning resources in electronics, automation, and science.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Tech Projects</h2>
+    <div class="project">
+      <h3>Smart Parking System</h3>
+      <p>ESP32-powered system with sensors, servo gate, LCD, and mobile notifications.</p>
+    </div>
+    <div class="project">
+      <h3>Automatic Gate Control</h3>
+      <p>Motion-triggered entry system using servo motors and real-time feedback.</p>
+    </div>
+  </section>
+
+  <section id="learning">
+    <h2>Learning Resources</h2>
+    <ul id="materialsList">
+      <li><a href="materials/smart_parking_notes.pdf" download>Smart Parking Notes (PDF)</a></li>
+      <li><a href="materials/chemistry_notes.pdf" download>Chemistry Notes (PDF)</a></li>
+      <li><a href="materials/physics_concepts.pdf" download>Physics Concepts (PDF)</a></li>
+    </ul>
+    <h3>Embedded Guide</h3>
+    <iframe src="https://docs.google.com/document/d/your-doc-id/preview" width="100%" height="400px"></iframe>
+  </section>
+
+  <section id="contact">
+    <h2>Connect with Me</h2>
+    <p>Email: danish@example.com</p>
+    <p>Location: Dengkil, Selangor, Malaysia</p>
+    <button onclick="logout()">Logout</button>
+  </section>
+
+  <footer>
+    <p>© 2025 EduHub by Danish</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
